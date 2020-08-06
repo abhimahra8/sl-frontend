@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.register {
+  margin-top:  3rem;
+ }
+
+ .headerTitleStyle {
+  text-align: center
+}
+
+.alignClass {
+  text-align: center;
+  margin-top: 200px
+}

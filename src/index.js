@@ -1,12 +1,18 @@
 import React from 'react';
+import { config as dotenvConfig } from "dotenv";
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import App from './router/app';
+import UserProvider from './context/userContext';
+
+dotenvConfig();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserProvider>
+      <App />
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
